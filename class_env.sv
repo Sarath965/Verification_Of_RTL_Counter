@@ -4,10 +4,10 @@ class count_env;
   virtual count_if.WR_MON_MP wrmon_if; 
   virtual count_if.RD_MON_MP rdmon_if;
   
-  mailbox #(count_trans) gen2dr = new(); 
-  mailbox #(count_trans) rm2sb = new(); 
-  mailbox #(count_trans) mon2sb = new(); 
-  mailbox #(count_trans) mon2rm = new();
+  mailbox #(count_trans) gen2dr  = new(); 
+  mailbox #(count_trans) rm2sb   = new(); 
+  mailbox #(count_trans) mon2sb  = new(); 
+  mailbox #(count_trans) mon2rm  = new();
   
   count_gen     gen_h;
   count_wr_mon  wrmon_h;
