@@ -33,11 +33,11 @@ interface count_if (input bit clock);
   endclocking
 
   // Driver
-  modport DRV (clocking dr_cb);
+  modport DRV_MP (clocking dr_cb);
   // Write Monitor
-  modport WR_MON (clocking wr_cb);
+  modport WR_MON_MP (clocking wr_cb);
   // Read Monitor
-  modport RD_MON (clocking rd cb);
+  modport RD_MON_MP (clocking rd cb);
     
 endinterface
   
