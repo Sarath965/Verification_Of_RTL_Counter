@@ -1,13 +1,13 @@
 class count_wr_mon;
 
-  virtual count if.WR_MON_MP wrmon_if;
+  virtual count_if.WR_MON_MP wrmon_if;
   count_trans data2rm, wr_data;
-  mailbox #(count_trans)mon2rm;
+  mailbox #(count_trans) mon2rm;
 
   function new(virtual count_if.WR_MON_MP wrmon_if,
-               mailbox #(count_trans)mon2rm);
-    this.wrmon if wrmon_if;
-    this.mon2rm mon2rm;
+               mailbox #(count_trans) mon2rm);
+    this.wrmon_if = wrmon_if;
+    this.mon2rm = mon2rm;
     this.wr_data = new;
   endfunction
   
