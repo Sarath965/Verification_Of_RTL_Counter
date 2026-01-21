@@ -1,6 +1,6 @@
-class count trans;
+class count_trans;
   //Interface Signals. 
-  rand logic [3:0]data_in; 
+  rand logic [3:0] data_in; 
   rand logic load; 
   rand logic up_down; 
   rand logic resetn; 
