@@ -14,7 +14,7 @@ module counter (
         count <= din;
       else if (up_down == 0)
         begin
-            if (count > 11)
+            if (count >= 11)
               count <= 4'b0;  
             else
               count <= count +1'b1;
